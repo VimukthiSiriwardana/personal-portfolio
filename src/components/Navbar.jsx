@@ -4,31 +4,63 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-sky-400">
+
+        <a
+          href="#home"
+          className="text-2xl font-bold text-sky-400 hover:text-cyan-400 transition"
+        >
           VS
-        </h1>
+        </a>
 
         {/* Navigation */}
+
         <ul className="hidden md:flex gap-8 text-slate-300 font-medium">
-          <li className="hover:text-sky-400 cursor-pointer transition">
-            Home
+
+          <li>
+            <a
+              href="#home"
+              className="hover:text-sky-400 transition"
+            >
+              Home
+            </a>
           </li>
 
-          <li className="hover:text-sky-400 cursor-pointer transition">
-            About
+          <li>
+            <a
+              href="#about"
+              className="hover:text-sky-400 transition"
+            >
+              About
+            </a>
           </li>
 
-          <li className="hover:text-sky-400 cursor-pointer transition">
-            Skills
+          <li>
+            <a
+              href="#skills"
+              className="hover:text-sky-400 transition"
+            >
+              Skills
+            </a>
           </li>
 
-          <li className="hover:text-sky-400 cursor-pointer transition">
-            Projects
+          <li>
+            <a
+              href="#projects"
+              className="hover:text-sky-400 transition"
+            >
+              Projects
+            </a>
           </li>
 
-          <li className="hover:text-sky-400 cursor-pointer transition">
-            Contact
+          <li>
+            <a
+              href="#contact"
+              className="hover:text-sky-400 transition"
+            >
+              Contact
+            </a>
           </li>
+
         </ul>
 
       </div>

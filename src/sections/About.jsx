@@ -31,8 +31,9 @@ function About() {
             </p>
 
             <p className="text-slate-400 leading-9 text-lg mt-6">
-              I enjoy learning by building real-world projects that combine networking,
-              Linux administration, automation, monitoring, and cybersecurity.
+              I enjoy learning by building real-world projects that combine
+              networking, Linux administration, automation, monitoring, and
+              cybersecurity.
             </p>
 
           </div>

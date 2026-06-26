@@ -1,5 +1,7 @@
+import { useState } from "react";
 import SectionTitle from "../components/SectionTitle";
 import contact from "../data/contact";
+import emailjs from "@emailjs/browser";
 
 import {
   MdEmail,
@@ -9,10 +11,55 @@ import {
 import {
   FaGithub,
   FaLinkedin,
-  FaFileDownload,
+  FaPaperPlane,
 } from "react-icons/fa";
 
 function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await emailjs.send(
+        "vimukthi23",
+        "template_2004",
+        {
+          name: form.name,
+          email: form.email,
+          title: form.subject,
+          message: form.message,
+        },
+        "4Uetq-Q_lhWwdiz8Q"
+      );
+
+      alert("✅ Message sent successfully!");
+
+      setForm({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+    } catch (error) {
+      console.error(error);
+      alert("❌ Failed to send message.");
+    }
+  };
+
   return (
     <section
       id="contact"
@@ -50,6 +97,7 @@ function Contact() {
               <p className="text-white text-lg">
                 {contact.email}
               </p>
+
             </a>
 
             {/* GitHub */}
@@ -73,6 +121,7 @@ function Contact() {
               <p className="text-white text-lg hover:text-cyan-400 transition">
                 Visit GitHub Profile →
               </p>
+
             </a>
 
             {/* LinkedIn */}
@@ -96,6 +145,7 @@ function Contact() {
               <p className="text-white text-lg hover:text-cyan-400 transition">
                 Visit LinkedIn Profile →
               </p>
+
             </a>
 
             {/* Location */}
@@ -122,35 +172,65 @@ function Contact() {
 
           {/* RIGHT */}
 
-          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-12 flex flex-col justify-center">
+          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-10">
 
-            <h2 className="text-5xl font-bold text-white mb-8">
-              Let's Build Something Great
+            <h2 className="text-4xl font-bold text-white mb-8">
+              Send Me a Message
             </h2>
 
-            <p className="text-slate-400 leading-10 text-xl mb-10">
-              I'm always interested in networking, enterprise
-              infrastructure, Linux administration, cloud technologies,
-              cybersecurity, and software engineering opportunities.
-              Feel free to connect with me.
-            </p>
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
 
-            <div className="flex flex-wrap gap-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={form.name}
+                onChange={handleChange}
+                required
+                className="w-full bg-slate-800 border border-slate-700 rounded-xl p-4 text-white outline-none focus:border-cyan-400 transition"
+              />
 
-              <a
-                href="/Vimukthi_Siriwardana_CV.pdf"
-                download
-                className="inline-flex items-center gap-3 bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-xl font-semibold transition"
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={form.email}
+                onChange={handleChange}
+                required
+                className="w-full bg-slate-800 border border-slate-700 rounded-xl p-4 text-white outline-none focus:border-cyan-400 transition"
+              />
+
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                value={form.subject}
+                onChange={handleChange}
+                className="w-full bg-slate-800 border border-slate-700 rounded-xl p-4 text-white outline-none focus:border-cyan-400 transition"
+              />
+
+              <textarea
+                rows="6"
+                name="message"
+                placeholder="Write your message..."
+                value={form.message}
+                onChange={handleChange}
+                required
+                className="w-full bg-slate-800 border border-slate-700 rounded-xl p-4 text-white outline-none resize-none focus:border-cyan-400 transition"
+              />
+
+              <button
+                type="submit"
+                className="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-3 transition duration-300"
               >
-                <FaFileDownload />
-                Download CV
-              </a>
+                <FaPaperPlane />
+                Send Message
+              </button>
 
-              <span className="inline-flex items-center px-5 py-4 rounded-xl border border-cyan-500 text-cyan-400 font-medium">
-                Available for Internships
-              </span>
-
-            </div>
+            </form>
 
           </div>
 
