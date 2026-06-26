@@ -59,6 +59,7 @@ const skills = [
       "VirtualBox",
       "VMware",
       "VS Code",
+      "IntelliJ IDEA"
     ],
   },
 ];
