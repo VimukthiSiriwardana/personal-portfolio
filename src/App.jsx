@@ -7,6 +7,7 @@ import HomeLab from "./sections/HomeLab";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
+import Certificates from "./sections/Certificates";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <HomeLab />
 
       <Projects />
+
+      <Certificates />
 
       <Contact />
 

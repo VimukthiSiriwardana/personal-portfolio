@@ -182,6 +182,12 @@ function Navbar() {
             </li>
 
             <li>
+              <a href="#certifications" className="vs-link">
+                Certifications
+              </a>
+            </li>
+
+            <li>
               <a href="#contact" className="vs-link">
                 Contact
               </a>
@@ -249,6 +255,16 @@ function Navbar() {
                 className="block px-6 py-4 text-slate-300 hover:text-cyan-400 hover:bg-slate-900 transition"
               >
                 Projects
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#certifications"
+                onClick={closeMenu}
+                className="block px-6 py-4 text-slate-300 hover:text-cyan-400 hover:bg-slate-900 transition"
+              >
+                Certifications
               </a>
             </li>
 
