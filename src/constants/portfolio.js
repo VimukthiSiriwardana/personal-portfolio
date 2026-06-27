@@ -1,21 +1,22 @@
 const portfolio = {
   name: "Vimukthi Siriwardana",
 
-  title: "Computer Systems & Network Engineering Undergraduate",
+  title: "Computer Systems & Network Engineering undergraduate at SLIIT",
 
   roles: [
-    "Network Engineer",
+    "Computer Systems & Network Engineer",
     "Linux System Administrator",
-    "Infrastructure Enthusiast",
+    "Cloud & Infrastructure Enthusiast",
     "Cybersecurity Learner",
   ],
 
   description:
-    "I design, deploy, and monitor enterprise-grade network infrastructure using Linux, Active Directory, Cisco technologies, Prometheus, Grafana, and modern system administration tools.",
+    "I design, deploy, secure, and monitor enterprise-grade network infrastructure using Linux, Active Directory, Cisco technologies, Prometheus, Grafana, and modern system administration tools.",
 
   buttons: {
-    cv: "Download CV",
     projects: "View Projects",
+    cv: "Download CV",
+    contact: "Contact Me",
   },
 
   social: {

@@ -2,6 +2,7 @@ import {
   FaArrowRight,
   FaDownload,
   FaEnvelope,
+  FaExternalLinkAlt
 } from "react-icons/fa";
 
 import portfolio from "../constants/portfolio";
@@ -27,9 +28,23 @@ function Hero() {
             {portfolio.name}
           </h1>
 
-          <h2 className="mt-5 text-2xl text-slate-300">
-            {portfolio.title}
-          </h2>
+          <h2 className="mt-5 text-2xl leading-relaxed">
+  <span className="text-cyan-400 font-semibold">
+    Computer Systems & Network Engineering
+  </span>{" "}
+  <span className="text-slate-300">
+    undergraduate at
+  </span>{" "}
+  <a
+    href="https://www.sliit.lk/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:text-white hover:underline transition duration-300"
+  >
+    SLIIT
+    <FaExternalLinkAlt className="text-sm" />
+  </a>
+</h2>
 
           <p className="mt-8 text-slate-400 leading-8 text-lg">
             {portfolio.description}
