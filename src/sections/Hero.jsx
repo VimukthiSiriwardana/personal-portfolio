@@ -1,3 +1,9 @@
+import {
+  FaArrowRight,
+  FaDownload,
+  FaEnvelope,
+} from "react-icons/fa";
+
 import portfolio from "../constants/portfolio";
 import heroImage from "../assets/images/vimukthi.png";
 
@@ -29,21 +35,39 @@ function Hero() {
             {portfolio.description}
           </p>
 
-          <div className="mt-10 flex gap-5">
+          {/* Buttons */}
+
+          <div className="mt-10 flex flex-wrap gap-5">
+
+            {/* View Projects */}
 
             <a
               href="#projects"
-              className="bg-sky-500 hover:bg-sky-600 transition px-7 py-3 rounded-xl font-semibold inline-block"
+              className="inline-flex items-center gap-3 bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-xl font-semibold transition duration-300 shadow-lg hover:shadow-sky-500/30"
             >
+              <FaArrowRight />
               {portfolio.buttons.projects}
             </a>
+
+            {/* Download CV */}
 
             <a
               href="/Vimukthi_Siriwardana_CV.pdf"
               download
-              className="border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-slate-950 transition px-7 py-3 rounded-xl font-semibold inline-block"
+              className="inline-flex items-center gap-3 border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-slate-950 px-8 py-4 rounded-xl font-semibold transition duration-300"
             >
+              <FaDownload />
               {portfolio.buttons.cv}
+            </a>
+
+            {/* Contact */}
+
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-3 border border-slate-600 text-slate-300 hover:border-sky-400 hover:bg-sky-400 hover:text-slate-950 px-8 py-4 rounded-xl font-semibold transition duration-300"
+            >
+              <FaEnvelope />
+              Contact Me
             </a>
 
           </div>
