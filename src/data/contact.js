@@ -5,7 +5,7 @@ const contact = {
     "https://github.com/VimukthiSiriwardana",
 
   linkedin:
-    "https://www.linkedin.com/in/vimukthi-siriwardana",
+    "https://www.linkedin.com/in/vimukthisiriwardana",
 
   location: "Sri Lanka",
 };
