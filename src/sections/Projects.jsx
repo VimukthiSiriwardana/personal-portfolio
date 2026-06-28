@@ -6,7 +6,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-[#020617] py-28 px-6"
+      className="bg-[#020617] py-15 px-6"
     >
       <div className="max-w-7xl mx-auto">
 

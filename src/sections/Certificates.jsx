@@ -6,7 +6,7 @@ function Certificates() {
   return (
     <section
       id="certifications"
-      className="bg-slate-950 py-24 px-6"
+      className="bg-slate-950 py-20 px-6"
     >
       <div className="max-w-7xl mx-auto">
 

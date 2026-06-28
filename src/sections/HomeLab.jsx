@@ -5,7 +5,7 @@ function HomeLab() {
   return (
     <section
       id="homelab"
-      className="bg-slate-950 py-28 px-6"
+      className="bg-slate-950 py-1 px-6"
     >
       <div className="max-w-7xl mx-auto">
 

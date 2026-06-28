@@ -14,7 +14,7 @@ function About() {
   ];
 
   return (
-    <section id="about" className="bg-slate-950 py-24 px-6">
+    <section id="about" className="bg-slate-950 py-5 px-6">
       <div className="max-w-7xl mx-auto">
         <SectionTitle subtitle="WHO I AM" title="About Me" />
 
