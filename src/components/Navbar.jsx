@@ -138,7 +138,7 @@ function Navbar() {
 
       <nav className="vs-nav fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-slate-800">
 
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-6 py-0 flex justify-between items-center">
 
           {/* Logo */}
 

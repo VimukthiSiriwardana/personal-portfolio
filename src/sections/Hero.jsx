@@ -12,7 +12,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-slate-950 flex items-center justify-center px-6"
+      className="min-h-screen bg-slate-950 flex items-center justify-center px-6 pt-24"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
