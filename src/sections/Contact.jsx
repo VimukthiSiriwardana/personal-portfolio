@@ -63,7 +63,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="bg-[#05081a] py-24 px-6"
+      className="bg-[#05081a] py-5 px-6"
     >
       <div className="max-w-7xl mx-auto">
 
