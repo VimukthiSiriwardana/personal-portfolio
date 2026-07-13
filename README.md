@@ -147,7 +147,7 @@ npm run preview
 vimukthi.induwara2004@gmail.com
 
 💼 **LinkedIn**  
-https://www.linkedin.com/in/vimukthi-siriwardana/
+https://www.linkedin.com/in/vimukthi-siriwardana
 
 🌐 **Portfolio**  
 https://vimukthi-siriwardana.vercel.app
