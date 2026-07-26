@@ -13,6 +13,7 @@ function About() {
     { value: "3+", label: "Home Labs" },
   ];
 
+  
   return (
     <section id="about" className="bg-slate-950 py-5 px-6">
       <div className="max-w-7xl mx-auto">
